@@ -1,9 +1,9 @@
-private double fractionLength = .88; 
+private double fractionLength = .81; 
 private int smallestBranch = 10; 
 private double branchAngle = .2;  
 public void setup() 
 {   
-	size(800,600);    
+	size(800,480);    
 	noLoop(); 
 } 
 public void draw() 
