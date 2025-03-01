@@ -12,7 +12,7 @@ public void draw()
 	strokeWeight(1.8);
 	stroke((int)(Math.random()*256),(int)(Math.random()*256),(int)(Math.random()*256));   
 	line(320,480,320,380);   
-	drawBranches(320,380,100,3*Math.PI/2);
+	drawBranches(400,580,100,3*Math.PI/2);
 
 } 
 public void drawBranches(int x,int y, double branchLength, double angle) 
