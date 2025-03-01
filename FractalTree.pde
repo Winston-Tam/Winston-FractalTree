@@ -31,6 +31,8 @@ line (x, y, endX2, endY2);
 
 //recursion
 if (branchLength > smallestBranch){
+angle1+= (math.random(1,10)/PI);
+angle2+= (Math.random(1,10)/PI);
 drawBranches(endX1, endY1, branchLength, angle1);
 drawBranches(endX2, endY2, branchLength, angle2);
 }
