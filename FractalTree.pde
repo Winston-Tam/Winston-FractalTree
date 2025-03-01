@@ -16,13 +16,18 @@ public void draw()
 } 
 public void drawBranches(int x,int y, double branchLength, double angle) 
 {   
-double angle1 = angle + branchAngle;
-double angle2 = angle - branchAngle;
+stroke((int)(Math.random()*255),255,255);
+double angle1, angle2;
+int endX1, endX2, endY1, endY2;
+angle1 = angle + branchAngle;
+angle2 = angle - branchAngle;
 branchLength = branchLength * fractionLength;
-int endX1 = (int)(branchLength*Math.cos(angle1) + x);
-int endX2 = (int)(branchLength*Math.cos(angle2) + x);
-int endY1 = (int)(branchLength*Math.sin(angle1) + y);
-int endY2 = (int)(branchLength*Math.sin(angle2) + y);
+endX1 = (int)(branchLength*Math.cos(angle1) + x);
+endX2 = (int)(branchLength*Math.cos(angle2) + x);
+endY1 = (int)(branchLength*Math.sin(angle1) + y);
+endY2 = (int)(branchLength*Math.sin(angle2) + y);
 line (x, y, endX1, endY1);
 line (x, y, endX2, endY2);
+
+
 } 
