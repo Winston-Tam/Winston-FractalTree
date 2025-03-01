@@ -23,6 +23,6 @@ int endX1 = (int)(branchLength*Math.cos(angle1) + x);
 int endX2 = (int)(branchLength*Math.cos(angle2) + x);
 int endY1 = (int)(branchLength*Math.sin(angle1) + y);
 int endY2 = (int)(branchLength*Math.sin(angle2) + y);
-line (x, y, X1, Y1);
-line (x, y, X2, Y2);
+line (x, y, endX1, endY1);
+line (x, y, endX2, endY2);
 } 
