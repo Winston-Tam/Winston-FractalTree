@@ -31,8 +31,6 @@ line (x, y, endX2, endY2);
 
 //recursion
 if (branchLength > smallestBranch){
-angle1 = angle + PI/5;
-angle2 - angle + PI/5;
 drawBranches(endX1, endY1, branchLength, angle1);
 drawBranches(endX2, endY2, branchLength, angle2);
 }
