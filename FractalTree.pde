@@ -3,13 +3,13 @@ private int smallestBranch = 10;
 private double branchAngle = .2;  
 public void setup() 
 {   
-	size(640,480);    
+	size(800,600);    
 	noLoop(); 
 } 
 public void draw() 
 {   
 	background(0);
-	strokeWeight(2.5);
+	strokeWeight(1.8);
 	stroke((int)(Math.random()*256),(int)(Math.random()*256),(int)(Math.random()*256));   
 	line(320,480,320,380);   
 	drawBranches(320,380,100,3*Math.PI/2);
