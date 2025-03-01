@@ -1,22 +1,22 @@
-private double fractionLength = .6; 
+private double fractionLength = 2.8; 
 private int smallestBranch = 10; 
-private double branchAngle = .18;  
+private double branchAngle = .28;  
 public void setup() 
 {   
-	size(640,640);    
+	size(640,480);    
 	noLoop(); 
 } 
 public void draw() 
 {   
 	background(0);   
-	line(320,480,320,380);
-	strokeWeight(2.5);
-	stroke((int)(Math.random()*256),(int)(Math.random()*256),(int)(Math.random()*256));  
+	stroke(0,255,0);   
+	line(320,480,320,380);   
 	drawBranches(320,380,100,3*Math.PI/2);
 
 } 
 public void drawBranches(int x,int y, double branchLength, double angle) 
 {   
+stroke((int)(Math.random()*255),255,255);
 double angle1, angle2;
 int endX1, endX2, endY1, endY2;
 angle1 = angle + branchAngle;
@@ -31,9 +31,9 @@ line (x, y, endX2, endY2);
 
 //recursion
 if (branchLength > smallestBranch){
-angle1+= PI/5;
-angle2+= PI/5;
-stroke((int)(Math.random()*256),(int)(Math.random()*256),(int)(Math.random()*256));  
+angle1+= PI/(Math.random()*5);
+angle2+= PI/(Math.random()*5);
+stroke(Math.random()*255);
 drawBranches(endX1, endY1, branchLength, angle1);
 drawBranches(endX2, endY2, branchLength, angle2);
 }
