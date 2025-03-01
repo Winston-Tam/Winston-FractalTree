@@ -1,6 +1,6 @@
-private double fractionLength = 2.8; 
+private double fractionLength = .8; 
 private int smallestBranch = 10; 
-private double branchAngle = .28;  
+private double branchAngle = .2;  
 public void setup() 
 {   
 	size(640,480);    
@@ -31,9 +31,6 @@ line (x, y, endX2, endY2);
 
 //recursion
 if (branchLength > smallestBranch){
-angle1+= PI/(Math.random()*5);
-angle2+= PI/(Math.random()*5);
-stroke(Math.random()*255);
 drawBranches(endX1, endY1, branchLength, angle1);
 drawBranches(endX2, endY2, branchLength, angle2);
 }
