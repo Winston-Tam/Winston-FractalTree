@@ -32,9 +32,9 @@ line (x, y, endX2, endY2);
 //recursion
 if (branchLength > smallestBranch){
 stroke((int)(Math.random()*256),(int)(Math.random()*256),(int)(Math.random()*256));
-angle1+=PI/6;
-angle2-=PI/6;
-drawBranches(endX1, endY1, branchLength/2, angle1);
-drawBranches(endX2, endY2, branchLength/2, angle2);
+angle1+=PI/4;
+angle2-=PI/4;
+drawBranches(endX1, endY1, branchLength/3, angle1);
+drawBranches(endX2, endY2, branchLength/3, angle2);
 }
 } 
