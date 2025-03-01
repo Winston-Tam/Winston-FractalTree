@@ -1,6 +1,6 @@
-private double fractionLength = .8; 
+private double fractionLength = 2.5; 
 private int smallestBranch = 10; 
-private double branchAngle = .2;  
+private double branchAngle = .28;  
 public void setup() 
 {   
 	size(640,480);    
@@ -34,7 +34,7 @@ if (branchLength > smallestBranch){
 stroke((int)(Math.random()*256),(int)(Math.random()*256),(int)(Math.random()*256));
 angle1+=PI/5;
 angle2-=PI/5;
-drawBranches(endX1, endY1, branchLength, angle1);
-drawBranches(endX2, endY2, branchLength, angle2);
+drawBranches(endX1, endY1, branchLength/4, angle1);
+drawBranches(endX2, endY2, branchLength/4, angle2);
 }
 } 
