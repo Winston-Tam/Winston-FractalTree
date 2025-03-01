@@ -29,5 +29,9 @@ endY2 = (int)(branchLength*Math.sin(angle2) + y);
 line (x, y, endX1, endY1);
 line (x, y, endX2, endY2);
 
-
+//recursion
+if (branchLength > smallestBranch){
+drawBranches(endX1, endY1, branchLength, angle1);
+drawBranches(endX2, endY2, branchLength, angle2);
+}
 } 
